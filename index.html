@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Invasion</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet" />
+  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-info text-center">Space Invasion</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <!-- GAME BOX GOES HERE -->
+        <div id="game">this is a empty div, which include the game window</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-info">Control Guide</h2>
+        <table class="table table-striped table-bordered">
+          <tbody>
+            <tr>
+              <td>Space</td>
+              <td>Shoot</td>
+            </tr>
+            <tr>
+              <td>Enter</td>
+              <td>Switch Weapon</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <h2 class="text-info">Top Scores</h2>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Initials</th>
+              <th>Score</th>
+              <th>Level</th>
+            </tr>
+          </thead>
+          <tbody id="score-table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <script type="text/javascript" src="js/globals.js"></script>
+  <script type="text/javascript" src="js/weapons.js"></script>
+  <script type="text/javascript" src="js/enemies.js"></script>
+  <script type="text/javascript" src="js/scores.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
