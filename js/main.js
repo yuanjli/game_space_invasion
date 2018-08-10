@@ -38,7 +38,7 @@ function preload(){
 	// Load audio files for later use:
 	game.load.audio('music', './assets/audio/Shadelike.mp3');
 	game.load.audio('pewpew', ['./assets/audio/laser.ogg', './assets/audio/laser.mp3']);
-	game.load.audio('launch','./assets/audio/missile.mp3');
+	game.load.audio('launch', './assets/audio/Missile.mp3');
 	game.load.audio('boom', ['./assets/audio/explosion.ogg', './assets/audio/explosion.mp3']);
 }
 
