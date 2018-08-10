@@ -49,7 +49,7 @@ function create(){
 	var background = game.add.tileSprite(0, 0, game.width, game.height, 'bg');
 	background.autoScroll(-30, 0);
 
-	// Set up sounds 
+	// Set up sounds and play
 	music = game.add.audio('music');
 	pewpew = game.add.audio('pewpew', 0.1);
 	launch = game.add.audio('launch', 0.5);
@@ -102,7 +102,7 @@ function create(){
 	});
 
 
-	//Add keyboard controls: 
+	//Add keyboard controls:  this code added the key captures 
 	cursors = game.input.keyboard.createCursorKeys(); //Arrow Keys 
 	game.input.keyboard.addKeyCapture([Phaser.Keyboard.SPACEBAR, Phaser.Keyboard.ENTER]);
 
@@ -112,7 +112,6 @@ function create(){
 
 	// Create enemies in a loop
 	game.time.events.loop(Phaser.Timer.SECOND * 2, spawnEnemy);
-
 
 }
 
